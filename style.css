@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-style: normal;
+    font-family: "Noto Sans", sans-serif;
+
 }
 body {
     background-color: #1d1d1d;
@@ -100,8 +103,8 @@ html {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 100%;
-    position: absolute;
-    bottom: 0;
+    
+    
 
 
 }
@@ -127,10 +130,35 @@ html {
     transition: 0.3s;
     cursor: pointer;
 }
+.btnCad {
+    width: 210px;
+    height: 65px;
+    border: 1px solid white;
+    padding: 1rem;
+    color: #ffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    opacity: 0.8;
+    letter-spacing: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
 .btn:hover {
     background-color: #ffffff3f;
 }
 .btn:active {
+    background-color: #fff;
+    color: #1d1d1d;
+    font-weight: 500;
+}
+.btnCad:hover {
+    background-color: #ffffff3f;
+}
+.btnCad:active {
     background-color: #fff;
     color: #1d1d1d;
     font-weight: 500;
@@ -517,5 +545,226 @@ flex-direction: column;
     width: 100%;
     height: 100%;
     cursor: pointer;
+
+}
+.secFinal {
+    background-color: #0c0c0c;
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    scroll-snap-align: start;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.contatoColuna {
+    width: 300px;
+    height: 60%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 16px;
+    font-family: "Poppins", sans-serif;
+    text-justify:distribute;
+
+}
+.contatoUl {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    list-style: none;
+    color: #dadada;
+    font-size: 18px;
+    font-weight: 300;
+    gap: 4px;
+
+
+}
+.tituloUl {
+    font-size: 18px;
+    font-weight: 400;
+    color: #636363;
+}
+.secFinal.direito {
+    height: 10vh;
+    background-color: #020202;
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    bottom: 0;
+}
+.secHome {
+    background-color: #1d1d1d;
+    width: 100vw;
+    height: 200vh;
+    scroll-snap-align: start;
+
+}
+.tela {
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+    background-color: #080808;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 4rem;
+}
+.titulinho {
+    font-size: 52px;
+    font-weight: 600;
+    color: #d3d3d3;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+
+    
+}
+.chaveDeConteudos {
+    width: 80%;
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+
+
+}
+.relo {
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+}
+.relo:before{
+    content: '';
+    position: absolute;
+    background-color: #020202;
+    right: -10px;
+    width: 95%;
+    height: 50%;
+}
+.subtela {
+    width: 100vw;
+    height: 80vh;
+    background-size: 100%;
+    background-color: #000000;
+    background-image: url(./assets/Frame\ 9\ \(2\).png);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-position: -50%;
+    
+}
+.textoLateral {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.conteudoPrincipal {
+    width: 80%;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #080808;
+    height: 100%;
+}
+.relogio {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    border: 25px solid white;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 50;
+    right: -10%;
+    transform: rotate(-90deg);
+    
+}
+.ponteiro {
+    width: 100px;
+    height: 35px;
+    background-color: #fff;
+    opacity: 1;
+    transform: translate(-50%);
+    position: absolute;
+    border-radius: 50px;
+
+}
+@keyframes rotate {
+    0% {
+
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+   
+    
+}
+@keyframes meioAnimation {
+    0% {
+
+    }
+    100%{
+        background-color: #929292;
+
+    }
+   
+    
+}
+.ponteiro.dois {
+    transform: rotate(0);
+    animation-name: rotate;
+    width: calc(100*2.5px);
+    animation: linear 10s infinite running slidein;
+    animation-name: rotate;
+ 
+    position: relative;
+    background-color: #63636300;
+    display: flex;
+    flex-direction: row;
+   
+    
+  
+
+
+}
+.metadeEsq{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0);
+    border-radius: 50px;
+
+}
+.metadeDir {
+    background-color: white ;
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+
+}
+.centro {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50% -50%);
+    animation: linear 2.5s infinite running slidein alternate;
+    animation-name: meioAnimation;
+    border-radius: 100%;
+
+ 
 
 }
