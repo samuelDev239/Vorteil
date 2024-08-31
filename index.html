@@ -46,7 +46,7 @@
           </div>
         </div>
      <div class="chaveDeConteudos">
-      <div class="conteudoPrincipal">
+      <div class="conteudoPrincipal" id="espaco">
         <p class="titulinho">Contexto</p>
         <p style="width: 90%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id voluptas accusamus animi veniam delectus perspiciatis, ratione reiciendis praesentium qui, ad, beatae nesciunt similique quibusdam. Alias expedita nulla obcaecati laborum!</p> <br>
         <p style="width: 90%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id voluptas accusamus animi veniam delectus perspiciatis, ratione reiciendis praesentium qui, ad, beatae nesciunt similique quibusdam. Alias expedita nulla obcaecati laborum!</p> <br>
@@ -54,8 +54,8 @@
         <p style="width: 90%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id voluptas accusamus animi veniam delectus perspiciatis, ratione reiciendis praesentium qui, ad, beatae nesciunt similique quibusdam. Alias expedita nulla obcaecati laborum!</p> <br>
 
       </div>
-      <div class="conteudoPrincipal">
-        <p class="titulinho">Quanto vale seu tempo?</p>
+      <div id="selecionada" class="conteudoPrincipal">
+      
         <p style="width: 90%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id voluptas accusamus animi veniam delectus perspiciatis, ratione reiciendis praesentium qui, ad, beatae nesciunt similique quibusdam. Alias expedita nulla obcaecati laborum!</p> <br>
         <img src="./assets/airport-2373727_1280.jpg" alt="" class="relo">
       </div>
@@ -79,7 +79,7 @@
         <p class="textoCorrido" style="font-weight: 700; font-size: 22px;">Quem somos nós?</p>
         <p class="textoCorrido" style="width: 100%; font-weight: 300;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, doloribus minima nam aspernatur officia recusandae reiciendis cumque ut pariatur laudantium dignissimos optio! Enim vero itaque dolor ut optio sed nobis?</p>
       </div>
-      <div class="align" style="padding: 1rem 3rem;">
+      <div id="vaiSumir"  class="align" style="padding: 1rem 3rem;">
         <div class="logo">
           <div class="circle"> <p class="title" style="left: -100px;">2</p></div> <p class="title padrao">Vorteil airlines</p>
         </div>
@@ -250,75 +250,75 @@
 </body>
 </html>
 <script>
-  var performance = false
-  var pergaminho = document.getElementById('pergaminho')
+ var performance = false
+ var pergaminho = document.getElementById('pergaminho')
 
-  var aberto = false
-  var fechado = true
+ var aberto = false
+ var fechado = true
   
-  function abrir() {
-    pergaminho.classList.toggle('aberto')
+ function abrir() {
+   pergaminho.classList.toggle('aberto')
   
-    setTimeout(() => {
-    conteudoDois.classList.toggle('visivel')
-    aberto = true
+   setTimeout(() => {
+   conteudoDois.classList.toggle('visivel')
+   aberto = true
 
-    },100)
+   },100)
 
   
 
   
     
-    console.log('oi')
+   console.log('oi')
 
 
-  }
-    var aviaoDois = document.getElementById('aviaoDois')
-    var titleAlt = document.getElementById('titleAlt')
-    aviaoDois.style.right = `${300 * 0.5}px`
-    titleAlt.style.fontSize = `${300 * 0.28}px`
-    aviaoDois.style.width = `${300 * 1.2}px`
-    aviaoDois.style.height = `${300 * 0.8}px`
+ }
+   var aviaoDois = document.getElementById('aviaoDois')
+   var titleAlt = document.getElementById('titleAlt')
+   aviaoDois.style.right = `${300 * 0.5}px`
+   titleAlt.style.fontSize = `${300 * 0.28}px`
+   aviaoDois.style.width = `${300 * 1.2}px`
+   aviaoDois.style.height = `${300 * 0.8}px`
     
-    ScrollReveal({ reset: true });
-    ScrollReveal( {duration: 2000});
-    addEventListener("mousemove", (event) => {
-    if(event.clientX > 300) {
-      aviaoDois.style.right = `${event.clientX * 0.5}px`
-    titleAlt.style.fontSize = `${event.clientX * 0.28}px`
-    aviaoDois.style.width = `${event.clientX * 1.2}px`
-    aviaoDois.style.height = `${event.clientX * 0.8}px`
+   ScrollReveal({ reset: true });
+   ScrollReveal( {duration: 2000});
+   addEventListener("mousemove", (event) => {
+   if(event.clientX > 300) {
+     aviaoDois.style.right = `${event.clientX * 0.5}px`
+   titleAlt.style.fontSize = `${event.clientX * 0.28}px`
+   aviaoDois.style.width = `${event.clientX * 1.2}px`
+   aviaoDois.style.height = `${event.clientX * 0.8}px`
 
-    }
-
-
-
-    // console.log(event)
-
-
-  });
-  ScrollReveal().reveal('.title' , { delay: 400 });
-    var aviao = document.getElementById('aviao')
-    document.addEventListener("scroll", (event) => {
-      console.log(window.scrollY)
-  if(window.scrollY >= 0 &&  window.scrollY <=800) {
-  aviao.style.width = `${40}px`
-  aviao.style.height = `${40}px`  
-
-  } else {
-    aviao.style.width = `${window.scrollY * 0.35 - 600}px`
-  aviao.style.height = `${window.scrollY * 0.35 - 600}px`
+   }
 
 
 
-  }
-  if(window.scrollY >= 1000) {
-    performance = true
+   // console.log(event)
+
+
+ });
+ ScrollReveal().reveal('.title' , { delay: 400 });
+   var aviao = document.getElementById('aviao')
+   document.addEventListener("scroll", (event) => {
+     console.log(window.scrollY)
+ if(window.scrollY >= 0 &&  window.scrollY <=800) {
+ aviao.style.width = `${40}px`
+ aviao.style.height = `${40}px`  
+
+ } else {
+   aviao.style.width = `${window.scrollY * 0.35 - 600}px`
+ aviao.style.height = `${window.scrollY * 0.35 - 600}px`
+
+
+
+ }
+ if(window.scrollY >= 1000) {
+   performance = true
     
-  }
+ }
   
    
   
   
- })
+})
 </script>

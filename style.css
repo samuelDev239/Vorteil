@@ -9,7 +9,7 @@
 body {
     background-color: #1d1d1d;
     scroll-snap-type: y mandatory;
-    width: 99vw;
+    width: 100vw;
     overflow-x: hidden;
 }
 html {
@@ -647,9 +647,12 @@ flex-direction: column;
     width: 95%;
     height: 50%;
 }
+.tela {
+
+}
 .subtela {
     width: 100vw;
-    height: 80vh;
+    height: 75vh;
     background-size: 100%;
     background-color: #000000;
     background-image: url(./assets/Frame\ 9\ \(2\).png);
@@ -669,7 +672,7 @@ flex-direction: column;
     gap: 16px;
 }
 .conteudoPrincipal {
-    width: 80%;
+    width: 100%;
     color: #fff;
     padding: 1rem;
     border-radius: 10px;
@@ -768,3 +771,179 @@ flex-direction: column;
  
 
 }
+@media (max-width: 450px){
+    body {
+        overflow: auto;
+        width: 100vw;
+
+    }
+    .title {
+        font-size: 72px !important;
+    }
+    .grid p {
+        font-size: 16px !important;
+        
+    }
+    #vaiSumir {
+        display: none;
+    }
+    .grid .align {
+        width: 100%;
+    }
+    .grid h1 {
+        display: none;
+        
+    }
+    .logo p {
+        font-size: 26px !important;
+    }
+    .grid .align {
+        padding: 0.5rem !important;
+    }
+
+    .grid {
+        display: grid;
+    width: 90%;
+    height: 90%;
+    grid-template-areas:
+        "item item"
+        "item1 item1"
+        "itemAlt item2"
+        !important;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 350px 250px 75px;
+    align-content: center;
+    justify-items: center;
+    gap: 2rem;
+    }
+    .circles {
+        width: 70px;
+        height: 40px;
+    }
+    .contato {
+        width: 27px;
+        height: 25px;
+    }
+    .botao {
+        height: 40px;
+    }
+    #espaco {display: flex; flex-direction: column; gap: 2rem;}
+    .cardUm.aberto {
+        height: 100%;
+        cursor: pointer;
+    }
+    .gridCard {
+        grid-template-areas:
+       "cardUm cardDois"
+       "cardTres cardQuatro"
+        "cardCinco cardCinco" !important;
+        grid-template-columns: 182px 182px ;
+        grid-template-rows: 242px 242px 302px;
+
+
+    }
+    .gridCard .title.padrao, .circle, .botao{
+        display: none;
+    }
+    
+    .gridCard h1{
+        display: none;
+    }
+    .containerTwo {
+        padding-bottom: 1rem;
+    }
+    .relo {
+        width: 100%;
+        height: 325px;
+    }
+  
+    .aviao, .aviaoDois, .fumaca {
+        display: none;
+    }
+    html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .chaveDeConteudos {
+        flex-direction: column;
+        width: 100%;
+    }
+    #selecionada {
+        flex-direction: row !important;
+        display: flex;
+    }
+    .relogio {
+      display: none;
+    }
+    #selecionada p {
+        display: none;
+    }
+    .arvore {
+        display: none;
+    }
+    .secFinal {
+        gap: 0.5rem;
+        height: 70vh;
+    }
+    .sec {
+        background-size: cover !important;
+    }
+    
+    .btn, .btnCad {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar {
+        width: 100%;
+        height: auto;
+        bottom: 2rem;
+        left: auto;
+        position: absolute;
+    }
+    .navbar ul{
+        font-size: 14px;
+        gap: 1rem;
+
+
+    }
+    .cardCinco .circle{
+        display: flex !important;
+        opacity: 1 !important;
+    }
+    .cardCinco .title.padrao {
+        display: flex !important;
+        opacity: 1 !important;
+    }
+    p {
+        font-size: 16px !important;
+    }
+    .tela {
+    }
+    .subtela {
+        height: 40vh !important;
+        background-size: cover !important;
+    }
+    .textoLateral p{
+        width: auto !important;
+    }
+    .textoLateral h1{
+        height: 72px !important;
+    }
+    .textoLateral {
+        width: 90% !important;
+    }
+    .conteudoPrincipal .titulinho {
+        font-size: 26px !important;
+    }
+    .conteudoDois.invisivel {
+        display: block;
+        height: 100%;
+    }
+}
+
+
