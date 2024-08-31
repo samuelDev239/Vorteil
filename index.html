@@ -142,8 +142,8 @@
           <div class="conteudoDois invisivel" id="conteudoDois">
             <div class="align" style="width: 90%; height: auto; border: none;">
               
-              <p class="textoCorrido" style="font-weight: 700; font-size: 18px; color: #ffff;">Quem somos nós?</p>
-              <p class="textoCorrido" style="width: 100%;  font-weight: 400; font-size: 14px; color: #ffff;" > doloribus minima nam aspernatur officia recusandae reiciendis cumque ut pariatur laudantium dignissimos optio! Enim vero itaque dolor ut optio sed nobis?</p>
+              <p class="textoCorrido" id="some" style="font-weight: 700; font-size: 18px; color: #ffff;">Quem somos nós?</p>
+              <p class="textoCorrido" id="some2" style="width: 100%;  font-weight: 400; font-size: 14px; color: #ffff;" > doloribus minima nam aspernatur officia recusandae reiciendis cumque ut pariatur laudantium dignissimos optio! Enim vero itaque dolor ut optio sed nobis?</p>
             </div>
             <div class="align"  style="width: 90%; height: auto; border: none;">
               <p class="textoCorrido" style="font-weight: 700; font-size: 18px; color: #ffff;">Quem somos nós?</p>
@@ -152,7 +152,7 @@
             </div>
   
           </div>
-          <div class="ancora"><img src="./assets/more.png" alt="" class="contato"></div>
+          <div id="anc" class="ancora"><img src="./assets/more.png" alt="" class="contato"></div>
 
 
         </div>
@@ -252,12 +252,14 @@
 <script>
  var performance = false
  var pergaminho = document.getElementById('pergaminho')
+ var anc = document.getElementById('anc')
 
  var aberto = false
  var fechado = true
   
  function abrir() {
    pergaminho.classList.toggle('aberto')
+   anc.classList.toggle('none')
   
    setTimeout(() => {
    conteudoDois.classList.toggle('visivel')

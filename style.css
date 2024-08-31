@@ -883,10 +883,7 @@ flex-direction: column;
     .arvore {
         display: none;
     }
-    .secFinal {
-        gap: 0.5rem;
-        height: 70vh;
-    }
+   
     .sec {
         background-size: cover !important;
     }
@@ -920,6 +917,17 @@ flex-direction: column;
         display: flex !important;
         opacity: 1 !important;
     }
+    .secFinal {
+        position: relative;
+        gap: 0.2rem;
+        
+    }
+    .secFinal.secFinal.direito {
+        display: none;
+    }
+    .contatoColuna {
+        width: 100%;
+    }
     p {
         font-size: 16px !important;
     }
@@ -941,9 +949,22 @@ flex-direction: column;
     .conteudoPrincipal .titulinho {
         font-size: 26px !important;
     }
+    #some, #some2 {
+        display: none;
+
+    }
     .conteudoDois.invisivel {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 100%;
+        padding-top: 8px;
+    }
+    .ancora.none {
+        display: none;
+    }
+    .conteudoDois.invisivel:nth-child(4){
+        display: none;
     }
 }
 
