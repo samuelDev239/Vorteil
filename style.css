@@ -251,6 +251,7 @@ p {
     align-content: center;
     justify-items: center;
     gap: 2rem;
+    justify-content: center;
 
 }
 
@@ -810,8 +811,8 @@ flex-direction: column;
         "item1 item1"
         "itemAlt item2"
         !important;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 350px 250px 75px;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 300px 200px 75px;
     align-content: center;
     justify-items: center;
     gap: 2rem;
@@ -827,7 +828,7 @@ flex-direction: column;
     .botao {
         height: 40px;
     }
-    #espaco {display: flex; flex-direction: column; gap: 2rem;}
+    #espaco {display: flex; flex-direction: column; gap: 1rem;}
     .cardUm.aberto {
         height: 100%;
         cursor: pointer;
@@ -838,7 +839,7 @@ flex-direction: column;
        "cardTres cardQuatro"
         "cardCinco cardCinco" !important;
         grid-template-columns: 182px 182px ;
-        grid-template-rows: 242px 242px 302px;
+        grid-template-rows: 242px 242px 222px;
 
 
     }
