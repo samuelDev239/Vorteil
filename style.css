@@ -774,7 +774,7 @@ flex-direction: column;
 }
 @media (max-width: 450px){
     body {
-        overflow: auto;
+        overflow-x: hidden;
         width: 100vw;
 
     }
@@ -838,10 +838,13 @@ flex-direction: column;
        "cardUm cardDois"
        "cardTres cardQuatro"
         "cardCinco cardCinco" !important;
-        grid-template-columns: 182px 182px ;
+        grid-template-columns: 162px 162px ;
         grid-template-rows: 242px 242px 222px;
 
 
+    }
+    .gridCard .textoCorrido{
+        font-size: 14px !important;
     }
     .gridCard .title.padrao, .circle, .botao{
         display: none;
@@ -920,7 +923,14 @@ flex-direction: column;
     .secFinal {
         position: relative;
         gap: 0.2rem;
-        
+        height: 320px;
+        padding:  8px;
+    }
+    .contatoColuna{
+        gap: 2px;
+    }
+    .secFinal p, li {
+        font-size: 14px;
     }
     .secFinal.secFinal.direito {
         display: none;
