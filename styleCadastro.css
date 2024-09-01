@@ -36,6 +36,7 @@
 p {
     font-family: "Noto Sans", sans-serif;
     color: #fff;
+    cursor: pointer;
 
 }
 .ipt {
